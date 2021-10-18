@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'rest_framework', 
-    'authApp'
+    'django.contrib.staticfiles', 
+    'authApp',
+    'rest_framework',
 ]
 
 SIMPLE_JWT = {
@@ -71,6 +71,8 @@ REST_FRAMEWORK = {
 		'rest_framework_simplejwt.authentication.JWTAuthentication',
 	)
 }
+
+AUTH_USER_MODEL = 'authApp.User'
 
 ROOT_URLCONF = 'authService.urls'
 
